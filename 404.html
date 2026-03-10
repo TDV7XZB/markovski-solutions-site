@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>404 - Page Not Found | Markovski Solutions</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary-blue: #3399ff;
+      --text-dark: #494949;
+      --text-darker: #3a3a3a;
+      --background: #f3f3f3;
+      --white: #ffffff;
+      --border-color: #e6e6e6;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-weight: 200;
+      font-size: 19px;
+      line-height: 1.5;
+      color: var(--text-dark);
+      background: var(--background);
+    }
+
+    /* Header  */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border-color);
+      padding: 20px 0;
+    }
+
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-logo img {
+      max-width: 150px;
+      height: auto;
+      display: block;
+    }
+
+    .site-navigation ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .site-navigation a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.2s;
+    }
+
+    .site-navigation a:hover {
+      color: var(--primary-blue);
+    }
+
+    /* Mobile menu toggle */
+    .mobile-menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .mobile-menu-toggle svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--primary-blue);
+    }
+
+    /* Main Content */
+    main {
+      min-height: calc(100vh - 400px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    .error-container {
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .error-code {
+      font-size: 120px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .error-divider {
+      width: 100px;
+      height: 4px;
+      background: var(--primary-blue);
+      margin: 0 auto 30px;
+    }
+
+    .error-title {
+      font-size: 32px;
+      font-weight: 600;
+      color: var(--text-darker);
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    .error-message {
+      font-size: 20px;
+      color: var(--text-dark);
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .error-path {
+      font-size: 16px;
+      color: #72767d;
+      margin-bottom: 40px;
+      font-family: 'Courier New', monospace;
+      background: rgba(51, 153, 255, 0.05);
+      padding: 10px 20px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    .btn-home {
+      display: inline-block;
+      padding: 15px 30px;
+      background: var(--primary-blue);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      border: 2px solid var(--primary-blue);
+      border-radius: 0;
+      transition: all 0.3s ease;
+    }
+
+    .btn-home:hover {
+      background: transparent;
+      color: var(--primary-blue);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--white);
+      border-top: 1px solid var(--border-color);
+      padding: 30px 20px;
+      margin-top: auto;
+    }
+
+    .footer-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      text-align: center;
+      color: var(--text-dark);
+      font-size: 16px;
+    }
+
+    .footer-container a {
+      color: var(--text-dark);
+      text-decoration: none;
+    }
+
+    .footer-container a:hover {
+      color: var(--primary-blue);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .site-navigation {
+        display: none;
+      }
+
+      .mobile-menu-toggle {
+        display: block;
+      }
+
+      .error-code {
+        font-size: 80px;
+      }
+
+      .error-title {
+        font-size: 24px;
+      }
+
+      .error-message {
+        font-size: 18px;
+      }
+
+      .header-container {
+        padding: 0 15px;
+      }
+
+      .site-logo img {
+        max-width: 110px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .error-code {
+        font-size: 60px;
+      }
+
+      .error-title {
+        font-size: 20px;
+      }
+
+      .btn-home {
+        padding: 12px 24px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="site-logo">
+        <a href="/" aria-label="Markovski Solutions">
+          <img src="/wp-content/uploads/logo-msol.svg" alt="Markovski Solutions Logo">
+        </a>
+      </div>
+      <nav class="site-navigation">
+        <ul>
+          <li><a href="/">About Us</a></li>
+          <li><a href="/contact-us/">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="error-container">
+      <div class="error-code">404</div>
+      <div class="error-divider"></div>
+      <h1 class="error-title">Page Not Found</h1>
+      <p class="error-message">
+        The page you are looking for doesn't exist or has been moved.
+      </p>
+      <div class="error-path" id="nf-path"></div>
+      <a href="/" class="btn-home" id="nf-home">Return Home</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 Markovski Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Display the current path
+    var path = window.location.pathname;
+    var prettyPath = path === "/" ? "/" : path.replace(/\/$/, "");
+    document.getElementById("nf-path").textContent = prettyPath;
+    
+    // Set up home link for GitHub Pages compatibility
+    var host = window.location.hostname;
+    var isGitHubPages = host.endsWith("github.io");
+    var basePath = "/";
+    
+    if (isGitHubPages) {
+      // For GitHub Pages project sites (user.github.io/project/)
+      var segments = path.split("/").filter(function(s) { return s.length > 0; });
+      basePath = segments.length > 0 ? "/" + segments[0] + "/" : "/";
+    }
+    
+    document.getElementById("nf-home").setAttribute("href", basePath);
+  </script>
+</body>
+</html>
